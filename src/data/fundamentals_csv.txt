@@ -1,0 +1,39 @@
+id,question,answer,difficulty,tags,estimatedTime,interviewType,companies
+virtual-dom,"What is React's Virtual DOM, and how does it improve rendering performance?","React's Virtual DOM is an in-memory representation of the real DOM. It's a JavaScript object that describes what the UI should look like. When state changes occur, React creates a new virtual DOM tree and compares it with the previous one through a process called reconciliation.
+
+Performance benefits:
+• Batching: Multiple DOM updates are batched together
+• Diffing: Only changed elements are updated in the real DOM
+• Efficient updates: Minimizes expensive DOM manipulation operations
+• Predictable performance: Provides consistent rendering performance patterns",medium,"virtual-dom,performance,reconciliation",8,technical,"Facebook,Netflix,Airbnb,Uber"
+hooks,"What are React Hooks, and how have they changed the way we build components?","React Hooks are functions that let you use state and other React features in functional components. Key hooks include useState, useEffect, useContext, and useCallback.
+
+How they changed React development:
+• Eliminated class components: No need for class syntax and binding methods
+• Simplified lifecycle: useEffect replaces componentDidMount, componentDidUpdate, etc.
+• Better code reuse: Custom hooks enable logic sharing between components
+• Smaller bundle size: Functional components are more tree-shakable
+• Improved readability: Related logic can be grouped together",easy,"hooks,functional-components,useState,useEffect",5,technical,"Google,Microsoft,Amazon"
+jsx-typescript,"How do you use JSX and TypeScript in React development? What advantages do they offer?","JSX: JSX allows you to write HTML-like code within JavaScript, making component templates more readable and intuitive.
+TypeScript advantages:
+• Type safety: Catches errors at compile time
+• Better IntelliSense: Enhanced IDE support with autocomplete
+• Self-documenting code: Types serve as inline documentation
+• Refactoring confidence: Safer large-scale code changes
+• Props validation: Interface definitions prevent prop-related bugs",easy,"jsx,typescript,props,interfaces",,,"[Not specified]","[Not specified]"
+component-structure,"What strategies do you use to structure React components for reuse and maintainability?","Component Architecture Strategies:
+
+1. Atomic Design Principles:
+• Atoms: Basic UI elements (Button, Input)
+• Molecules: Simple combinations (SearchBox)
+• Organisms: Complex combinations (Header, ProductList)
+
+2. Composition over Inheritance:
+• Use children props for flexible layouts
+• Higher-Order Components (HOCs) for cross-cutting concerns
+• Render props pattern for dynamic behavior
+
+3. Avoid Prop Drilling:
+• Use Context API for theme/user data
+• State management libraries (Redux) for complex state
+• Component composition to reduce nesting",medium,"architecture,atomic-design,composition,maintainability",,,"[Not specified]","[Not specified]"
